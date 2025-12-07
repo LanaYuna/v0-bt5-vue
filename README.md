@@ -9,6 +9,8 @@ Projeto inicial para outros projetos com [__vue3__](https://vuejs.org/) e [__boo
 - Refatoração do template da seção "sobre" usando 'v-for' para renderização dinâmica das sections 
 - Direcionamento para a URL do curso ao clicar em algum curso na interface
 
+Veja mais detalhes em [DETAILS.md](./DETAILS.md).
+
 ## Como Contribuir e Expandir
 
 Este boilerplate foi projetado para ser modular e fácil de expandir. Aqui estão alguns guias para tarefas comuns:
