@@ -38,11 +38,16 @@ provide(searchKey, query);
 
 html[data-bs-theme="light"] mark { 
   background-color: rgb(214, 223, 255);
+  padding: 0;
+  border-radius: 5px;
 }
 
 
 html[data-bs-theme="dark"] mark {
-  background-color: rgb(51, 76, 112); 
+  background-color: rgb(47, 75, 111); 
+  padding: 0;
+  border-radius: 5px;
 }
+
 
 </style>

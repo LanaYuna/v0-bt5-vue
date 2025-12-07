@@ -8,7 +8,6 @@ Projeto inicial para outros projetos com [__vue3__](https://vuejs.org/) e [__boo
 - Melhoria da estilização referente a seção "sobre"
 - Refatoração do template usando v-for para renderização universal de sections da seção "sobre"
 
-
 ## Como Contribuir e Expandir
 
 Este boilerplate foi projetado para ser modular e fácil de expandir. Aqui estão alguns guias para tarefas comuns:

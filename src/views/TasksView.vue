@@ -1,10 +1,13 @@
 <template>
   <div class="page-background">
     <div class="container mt-4 mb-5 task-app-container">
-      <h1 class="mb-2 text-center task-app-title">
-        <i class="bi bi-check2-square me-2"></i>{{ t('tasks.title') }}
-      </h1>
-      <p class="text-center text-muted mb-4 subtitle">{{ t('tasks.subtitle') }}</p>
+      <h1 v-if="isSearching" class="mb-2 text-center task-app-title" v-html="highlightedContent.highlightedTitle"></h1>
+
+      <h1 v-else class="mb-2 text-center task-app-title">{{ (highlightedContent.originalTitle) }}</h1>
+
+      <p v-if="isSearching" class="text-center text-muted mb-4 subtitle" v-html="highlightedContent.highlightedSubtitle"></p>
+
+      <p v-else class="text-center text-muted mb-4 subtitle">{{highlightedContent.originalSubtitle}}</p>
 
       <div class="input-group mb-4 shadow-sm">
         <input
@@ -63,8 +66,10 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch, onMounted, computed } from 'vue';
+import { ref, watch, onMounted, computed, inject } from 'vue';
 import { useI18n } from 'vue-i18n';
+import { searchKey } from '@/keys.ts';
+import { highlightedText } from '@/util/highlightUtil';
 
 const { t } = useI18n();
 
@@ -127,6 +132,43 @@ watch(
   },
   { deep: true }
 );
+
+const query = inject(searchKey)!;
+
+const textContent = {
+  title: "tasks.title",
+  subtitle: "tasks.subtitle",
+};
+
+const highlightedContent = computed(() => {
+  const searchValue = query.value?.trim().toLowerCase() || "";
+
+  if (!searchValue) {
+    return {
+      originalTitle: t(textContent.title),
+      originalSubtitle: t(textContent.subtitle),
+      highlightedTitle: null,
+      highlightedSubtitle: null,
+    };
+  }
+
+
+  const originalTitle = t(textContent.title);
+  const originalSubtitle = t(textContent.subtitle);
+
+  return {
+    originalTitle,
+    originalSubtitle,
+    highlightedTitle: highlightedText(originalTitle, searchValue),
+    highlightedSubtitle: highlightedText(originalSubtitle, searchValue),
+  };
+});
+
+
+const isSearching = computed(() => {
+  return !!query.value && query.value.trim().length > 0;
+});
+
 </script>
 
 <style scoped>

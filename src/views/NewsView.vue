@@ -14,11 +14,11 @@
                 <div class="card h-100 shadow-sm">
                   <img :src="news.image" class="card-img-top" :alt="news.title" />
                   <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">{{ news.title }}</h5>
+                    <h5 class="card-title" v-html="news.title"></h5>
                     <p class="text-muted mb-1">
-                      <i class="bi bi-clock"></i> {{ news.date }}
+                      <i class="bi bi-clock" v-html="news.date"></i> 
                     </p>
-                    <p class="card-text">{{ news.description }}</p>
+                    <p class="card-text" v-html="news.description"></p>
                   </div>
                 </div>
               </a>
@@ -40,18 +40,31 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
-import { useI18n } from "vue-i18n"
-import newsData from '@/data/news.json'
+import { computed, inject } from 'vue';
+import { useI18n } from "vue-i18n";
+import newsData from '@/data/news.json';
+import { highlightedText } from '@/util/highlightUtil';
+import { searchKey } from '@/keys';
 
 const { t } = useI18n()
+const query = inject(searchKey)!;
 
-const newsList = computed(() => newsData.map(news => ({
-  ...news,
-  title: t(news.title),
-  description: t(news.description)
-})))
+const newsList = computed(() => {
+  const searchValue = query.value ? query.value.trim().toLowerCase() : '';
 
+  return newsData.map(news => {
+    const title = t(news.title);
+    const description = t(news.description);
+    const date = t(news.date);
+
+    return {
+      ...news,
+      title: searchValue ? highlightedText(title, searchValue) : title,
+      description: searchValue ? highlightedText(description, searchValue) : description,
+      date: searchValue ? highlightedText(date, searchValue) : date
+    };
+  });
+});
 
 const chunkedNews = computed(() => {
   const chunkSize = 3
@@ -61,6 +74,7 @@ const chunkedNews = computed(() => {
   }
   return chunks
 })
+
 
 </script>
 

@@ -1,7 +1,10 @@
 <script setup lang="ts">
-import { ref, onMounted } from "vue";
+import { ref, onMounted, inject, computed } from "vue";
 import { useI18n } from "vue-i18n";
+import { searchKey } from "@/keys";
+import { highlightedText } from "@/util/highlightUtil";
 import * as bootstrap from "bootstrap";
+
 interface FormData {
   nome: string;
   email: string;
@@ -106,6 +109,41 @@ const resetForm = () => {
   };
   formErrors.value = { nome: "", email: "", mensagem: "" };
 };
+
+const query = inject(searchKey)!;
+
+const textContent = {
+  title: "contactPage.title",
+  localTitle: "contactPage.form.locationTitle",
+};
+
+const highlightedContent = computed(() => {
+  const searchValue = query.value?.trim().toLowerCase() || "";
+
+  if (!searchValue) {
+    return {
+      originalTitle: t(textContent.title),
+      originalLocalTitle: t(textContent.localTitle),
+      highlightedTitle: null,
+      highlightedLocalTitle: null,
+    };
+  }
+
+  const originalTitle = t(textContent.title);
+  const originalLocalTitle = t(textContent.localTitle);
+
+  return {
+    originalTitle,
+    originalLocalTitle,
+    highlightedTitle: highlightedText(originalTitle, searchValue),
+    highlightedLocalTitle: highlightedText(originalLocalTitle, searchValue),
+  };
+});
+
+
+const isSearching = computed(() => {
+  return !!query.value && query.value.trim().length > 0;
+});
 </script>
 
 <template>
@@ -113,7 +151,8 @@ const resetForm = () => {
     <div class="row">
       <div class="col-md-6 mb-4">
         <div class="contact-form">
-          <h2 class="mb-4 text-start">{{ t("contactPage.title") }}</h2>
+          <h2 v-if="isSearching" class="mb-4 text-start" v-html="highlightedContent.highlightedTitle"></h2>
+          <h2 v-else class="mb-4 text-start">{{ highlightedContent.originalTitle}}</h2>
 
           <form @submit.prevent="enviarFormulario" novalidate>
             <div class="mb-3">
@@ -192,9 +231,8 @@ const resetForm = () => {
       </div>
 
       <div class="col-md-6">
-        <h3 class="mb-3 text-start">
-          {{ $t("contactPage.form.locationTitle") }}
-        </h3>
+        <h3 v-if="isSearching" class="mb-3 text-start" v-html="highlightedContent.highlightedLocalTitle"></h3>
+        <h3 v-else class="mb-3 text-start">{{ highlightedContent.originalLocalTitle }}</h3>
         <div class="mapa-container">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.820351132375!2d-53.766341624975766!3d-24.733047105680583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f395bcaf1f4697%3A0x8f229c248dfeae93!2sUTFPR%20-%20Campus%20Toledo!5e0!3m2!1spt-BR!2sbr!4v1750895253053!5m2!1spt-BR!2sbr"

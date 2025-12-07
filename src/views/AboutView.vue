@@ -28,7 +28,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, inject, computed, watch } from "vue";
+import { ref, inject, computed } from "vue";
 import { useI18n } from "vue-i18n";
 import { highlightedText } from "../util/highlightUtil.ts";
 import { searchKey } from "@/keys.ts";
@@ -55,11 +55,6 @@ const sections = ref<Section[]>([
 ]);
 
 const query = inject(searchKey)!; // query armazenada na variável
-
-// Teste para verificar a query
-watch(query, (newValue) => {
-  console.log("Query mudou para:", newValue);
-}, { deep: true, immediate: true });
 
 const isSearching = computed(() => {
   return !!query.value && query.value.trim().length > 0;

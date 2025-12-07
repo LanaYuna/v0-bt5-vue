@@ -12,7 +12,6 @@
         <span v-else>{{ highlightedContent.originalTitle }}</span>
       </h1>
 
-      <!-- Parágrafo -->
       <p>
         <span v-if="isSearching" v-html="highlightedContent.highlightedText"></span>
         <span v-else>{{ highlightedContent.originalText }}</span>
@@ -37,7 +36,6 @@ const textContent = {
   title: "homePage.title",
   text: "homePage.welcomeMessage",
 };
-
 
 const highlightedContent = computed(() => {
   const searchValue = query.value?.trim().toLowerCase() || "";
