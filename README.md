@@ -1,18 +1,12 @@
 # v0-bt5-vue
 Projeto inicial para outros projetos com [__vue3__](https://vuejs.org/) e [__bootstrap5__](https://getbootstrap.com/)
 
-O esperado de um projeto incial:
-- [x] Mudar de tema (claro / escuro)
-- [x] Fazer o auto do tema (detecta preferência do sistema)
-- [x] Multi línguas ([vue-i18n](https://vue-i18n.intlify.dev/))
-- [x] Colocar mais palavras na tradução (i18n.json)
-- [ ] Colocar os ícones do bootstrap5
-- [ ] Pensar no site com a pasta layouts?!?
-- [ ] Busca interna ??? [algolia](https://www.algolia.com/developers) [typesense](https://typesense.org/)
-- [ ] Blog / Notícias ???
-- [ ] Mais frameworks CSS??? (ex: beer, taywind)
-- [ ] Mais modelos de rodapé e menu principal
-- [ ] Criar temas ou templates. Exemplo de lista no site [startbootstrap](https://startbootstrap.com/templates?showPro=false&showAngular=false&showVue=false)
+# Documentação das alterações realizadas
+- Modificação da funcionalidade da barra de pesquisa de forma a filtrar palavras da página atual
+- Remoção de arquivos referentes a antiga funcionalidade da barra de pesquisa
+- Remoção da seção "cards"
+- Melhoria da estilização referente a seção "sobre"
+- Refatoração do template usando v-for para renderização universal de sections da seção "sobre"
 
 
 ## Como Contribuir e Expandir
