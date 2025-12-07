@@ -1,0 +1,562 @@
+{
+  "pt": {
+    "welcome": "Bem-vindo ao nosso site!",
+    "language": "Idioma",
+    "navbar": {
+      "search": "Buscar",
+      "darkMode": "Modo Escuro",
+      "toggleNavigation": "Alternar navegação",
+      "noResults": "Nenhum resultado encontrado"
+    },
+    "routes": {
+      "home": "Início",
+      "about": "Sobre",
+      "contact": "Contato",
+      "contacts": "Contato",
+      "search": "Buscar",
+      "news": "Notícias",
+      "cards": "Cards",
+      "courses": "Cursos",
+      "tasks": "Tarefas"
+    },
+    "tasks": {
+      "title": "Minhas Tarefas Acadêmicas",
+      "subtitle": "Use este espaço como sua agenda pessoal para organizar seus estudos e prazos.",
+      "placeholder": "O que precisa ser feito?",
+      "add_button": "Adicionar",
+      "clear_button": "Limpar Concluídas",
+      "empty_state": "Nenhuma tarefa por enquanto!"
+    },
+    "footer": {
+      "title": "Universidade Tecnológica Federal do Paraná (UTFPR)",
+      "description": "A UTFPR é uma instituição de ensino superior voltada à tecnologia e inovação, oferecendo graduação, pós-graduação e pesquisa.",
+      "contact": "Contato",
+      "address": "R. Cristo Rei, 19 – Vila Becker, Toledo – PR, 85902-490",
+      "phone": "(45) 3379-6800",
+      "email": "contato@utfpr.edu.br",
+      "copyright": "© 2025 Universidade Tecnológica Federal do Paraná. Todos os direitos reservados.",
+      "socialMedia": {
+        "whatsapp": "Link para o WhatsApp",
+        "twitter": "Link para o Twitter",
+        "youtube": "Link para o YouTube",
+        "instagram": "Link para o Instagram",
+        "facebook": "Link para o Facebook",
+        "linkedin": "Link para o LinkedIn",
+        "tiktok": "Link para o TikTok"
+      }
+    },
+    "languageNames": {
+      "pt": "Português",
+      "en": "Inglês",
+      "es": "Espanhol",
+      "fr": "Francês"
+    },
+    "aboutPage": {
+      "title": "Sobre a nós",
+      "paragraph1": "Este site foi desenvolvido como parte da disciplina <strong>Web Front-End II</strong> da UTFPR, utilizando Vue 3, Vite, TypeScript, Beercss e i18n.",
+      "paragraph2": "O projeto demonstra boas práticas de front-end, com suporte a múltiplos idiomas, formulário funcional e responsividade.",
+      "title2": "Missão",
+      "paragraph3": "Desenvolver a educação tecnológica de excelência, construir e compartilhar o conhecimento voltado à solução dos reais desafios da sociedade.",
+      "title3": "Visão",
+      "paragraph4": "Ser uma universidade reconhecida internacionalmente pela importância de sua atuação em prol do desenvolvimento regional e nacional sustentável.",
+      "title4": "Ética",
+      "paragraph5": "Contar com estudantes e servidores eticamente responsáveis, inseridos em um contexto de busca do conhecimento e de dedicação à verdade científica e à imparcialidade.",
+      "title5": "Tecnologia e humanismo",
+      "paragraph6": "Considerar a tecnologia como algo inerente à sociedade e que os aspectos humanos são parte integrante do problema e da solução de todo desenvolvimento tecnológico.",
+      "title6": "Desenvolvimento humano",
+      "paragraph7": "Formar o cidadão crítico, ético e autônomo.",
+      "title7": "Interação com o entorno",
+      "paragraph8": "Desenvolver sua missão de modo responsável, solidário e cooperativo com a sociedade, governos e organizações.",
+      "title8": "Empreendedorismo e Inovação",
+      "paragraph9": "Efetuar a mudança por meio de atitude empreendedora.",
+      "title9": "Excelência",
+      "paragraph10": "Promover a melhoria contínua das atividades acadêmicas, de gestão e da relação com a sociedade.",
+      "title10": "Sustentabilidade",
+      "paragraph11": "Assegurar que todas as ações se observem sustentáveis nas dimensões sociais, ambientais e econômicas.",
+      "title11": "Diversidade e inclusão",
+      "paragraph12": "Promover a educação tecnológica, respeitando e valorizando a diversidade e o potencial de todas as pessoas.",
+      "title12": "Democracia e transparência",
+      "paragraph13": "Valorizar a participação democrática e a transparência em todas as instâncias da UTFPR, como compromissos voltados ao fortalecimento dos processos de participação das comunidades universitária e externa na concepção, decisão, implementação e avaliação das ações da Universidade."
+    },
+    "contactPage": {
+      "title": "Fale conosco",
+      "form": {
+        "nameLabel": "Nome",
+        "namePlaceholder": "Digite seu nome",
+        "emailLabel": "Email",
+        "emailPlaceholder": "email@exemplo.com",
+        "submitButton": "Enviar",
+        "locationTitle": "Localização da UTFPR - Toledo",
+        "messageLabel": "Mensagem",
+        "messagePlaceholder": "Digite sua mensagem aqui...",
+        "successMessage": "Mensagem enviada com sucesso!"
+      }
+    },
+    "homePage": {
+      "title": "Página Inicial",
+      "welcomeMessage": "Bem-vindo à página principal do nosso site."
+    },
+    "newsPage": {
+      "firstNews": {
+        "title": "UTFPR firma parceria de R$ 39 milhões com petrolífera chinesa para pesquisa tecnológica",
+        "description": "Projeto será realizado pelo Núcleo de Escoamento Multifásico do Campus Curitiba"
+      },
+      "secondNews": {
+        "title": "Cerimônia de posse da Vice-Reitoria será na próxima segunda, 30",
+        "description": "No mesmo dia, também acontecerá posse do diretor-geral do Campus Curitiba"
+      },
+      "thirdNews": {
+        "title": "Nota de Pesar: José Sollak",
+        "description": "Servidor aposentado da UTFPR faleceu nesta quinta-feira, 26 de junho, aos 76 anos"
+      },
+      "fourthNews": {
+        "title": "Pesquisador integra grupo de cientistas a usar o maior telescópio do mundo",
+        "description": "Felipe Ribas esteve no lançamento do Observatório Vera C. Rubin para apresentar seus estudos."
+      },
+      "fifthNews": {
+        "title": "Pesquisa revela que produção ecológica é a mais rentável para agricultura familiar",
+        "description": "Estudo comparou propriedades rurais que adotam modelo tradicional de cultivo com as que usam agroecologia"
+      },
+      "sixtiethNews": {
+        "title": "Proppg lança edital inédito para registro de bolsas externas de Iniciação Científica e Tecnológica",
+        "description": "Iniciativa permitirá o reconhecimento institucional desses bolsistas"
+      },
+      "carousel": {
+        "prev": "Anterior",
+        "next": "Próximo"
+      }
+    },
+    "courses": {
+      "civil_eng": "Engenharia Civil",
+      "comp_eng": "Engenharia de Computação",
+      "biopro_eng": "Engenharia de Bioprocessos e Biotecnologia",
+      "electro_eng": "Engenharia Eletrônica",
+      "math_lic": "Licenciatura em Matemática",
+      "chem_proc_tec": "Tecnologia em Processos Químicos",
+      "web_sys_tec": "Tecnologia em Sistemas para Internet",
+      "bachelor": "Bacharelado",
+      "licentiate": "Licenciatura",
+      "technologist": "Tecnólogo"
+    }
+  },
+  "en": {
+    "welcome": "Welcome to our website!",
+    "language": "Language",
+    "navbar": {
+      "search": "Search",
+      "darkMode": "Dark Mode",
+      "toggleNavigation": "Toggle navigation",
+      "noResults": "No results found"
+    },
+    "routes": {
+      "home": "Home",
+      "about": "About",
+      "contact": "Contact",
+      "contacts": "Contact",
+      "search": "Search",
+      "news": "News",
+      "cards": "Cards",
+      "courses": "Courses",
+      "tasks": "Tasks"
+    },
+    "tasks": {
+      "title": "My Academic Tasks",
+      "subtitle": "Use this space as your personal agenda to organize your studies and deadlines.",
+      "placeholder": "What needs to be done?",
+      "add_button": "Add",
+      "clear_button": "Clear Completed",
+      "empty_state": "No tasks for now!"
+    },
+    "footer": {
+      "title": "Federal University of Technology – Paraná (UTFPR)",
+      "description": "UTFPR is a higher-education institution focused on technology and innovation, offering undergraduate, graduate, and research programs.",
+      "contact": "Contact",
+      "address": "R. Cristo Rei, 19 – Vila Becker, Toledo – PR, 85902-490",
+      "phone": "+55  (45) 3379-6800",
+      "email": "contato@utfpr.edu.br",
+      "copyright": "© 2025 Federal University of Technology - Paraná. All rights reserved.",
+      "socialMedia": {
+        "whatsapp": "Link to WhatsApp",
+        "twitter": "Link to Twitter",
+        "youtube": "Link to YouTube",
+        "instagram": "Link to Instagram",
+        "facebook": "Link to Facebook",
+        "linkedin": "Link to LinkedIn",
+        "tiktok": "Link to TikTok"
+      }
+    },
+    "languageNames": {
+      "pt": "Portuguese",
+      "en": "English",
+      "es": "Spanish",
+      "fr": "French"
+    },
+    "aboutPage": {
+      "title": "About Us",
+      "paragraph1": "This website was developed as part of the <strong>Web Front-End II</strong> course at UTFPR, using Vue 3, Vite, TypeScript, Beercss, and i18n.",
+      "paragraph2": "The project demonstrates front-end best practices, with support for multiple languages, a functional form, and responsiveness.",
+      "title2": "Mission",
+      "paragraph3": "To develop excellent technological education, and to build and share knowledge aimed at solving society’s real challenges.",
+      "title3": "Vision",
+      "paragraph4": "To be a university recognized internationally for its contribution to sustainable regional and national development.",
+      "title4": "Ethics",
+      "paragraph5": "To count on students and staff who act ethically, committed to the pursuit of knowledge, scientific truth, and impartiality.",
+      "title5": "Technology and Humanism",
+      "paragraph6": "To regard technology as an inherent part of society, where human aspects are integral to both the problem and the solution in all technological development.",
+      "title6": "Human Development",
+      "paragraph7": "To educate citizens who are critical, ethical, and autonomous.",
+      "title7": "Interaction with the Community",
+      "paragraph8": "To carry out our mission responsibly, in solidarity and cooperation with society, government bodies, and organizations.",
+      "title8": "Entrepreneurship and Innovation",
+      "paragraph9": "To drive change through entrepreneurial initiative.",
+      "title9": "Excellence",
+      "paragraph10": "To promote continuous improvement in academic activities, management practices, and our relationship with society.",
+      "title10": "Sustainability",
+      "paragraph11": "To ensure that all actions are sustainable across social, environmental, and economic dimensions.",
+      "title11": "Diversity and Inclusion",
+      "paragraph12": "To promote technological education by respecting and valuing the diversity and potential of all individuals.",
+      "title12": "Democracy and Transparency",
+      "paragraph13": "To value democratic participation and transparency at all levels of UTFPR, strengthening the involvement of both university and external communities in the conception, decision-making, implementation, and evaluation of university actions."
+    },
+    "contactPage": {
+      "title": "Contact Us",
+      "form": {
+        "nameLabel": "Name",
+        "namePlaceholder": "Enter your name",
+        "emailLabel": "Email",
+        "emailPlaceholder": "email@example.com",
+        "submitButton": "Submit",
+        "locationTitle": "Location of UTFPR - Toledo",
+        "messageLabel": "Message",
+        "messagePlaceholder": "Type your message here...",
+        "successMessage": "Message sent successfully!"
+      }
+    },
+    "homePage": {
+      "title": "Home Page",
+      "welcomeMessage": "Welcome to the main page of our website."
+    },
+    "newsPage": {
+      "firstNews": {
+        "title": "UTFPR signs partnership of R$ 39 million with Chinese oil company for technological research",
+        "description": "Project will be carried out by the Multiphase Flow Center at the Curitiba Campus"
+      },
+      "secondNews": {
+        "title": "Vice-Rector's inauguration ceremony will be next Monday, 30th",
+        "description": "On the same day, the director-general of the Curitiba Campus will also take office"
+      },
+      "thirdNews": {
+        "title": "Obituary: José Sollak",
+        "description": "Retired UTFPR employee passed away this Thursday, June 26th, at the age of 76"
+      },
+      "fourthNews": {
+        "title": "Researcher joins group of scientists using the world's largest telescope",
+        "description": "Felipe Ribas participated in the launch of the Vera C. Rubin Observatory to present his studies."
+      },
+      "fifthNews": {
+        "title": "Research reveals ecological farming is most profitable for family agriculture",
+        "description": "Study compared farms using traditional cultivation with those using agroecology"
+      },
+      "sixtiethNews": {
+        "title": "Proppg launches unprecedented call for registration of external Scientific and Technological Initiation scholarships",
+        "description": "Initiative will allow institutional recognition of these scholarship holders"
+      },
+      "carousel": {
+        "prev": "Previous",
+        "next": "Next"
+      }
+    },
+    "courses": {
+      "civil_eng": "Civil Engineering",
+      "comp_eng": "Computer Engineering",
+      "biopro_eng": "Bioprocess and Biotechnology Engineering",
+      "electro_eng": "Electronic Engineering",
+      "math_lic": "Mathematics (Teaching Degree)",
+      "chem_proc_tec": "Technology in Chemical Processes",
+      "web_sys_tec": "Technology in Systems for Internet",
+      "bachelor": "Bachelor's Degree",
+      "licentiate": "Teaching Degree",
+      "technologist": "Technologist"
+    }
+  },
+  "es": {
+    "welcome": "¡Bienvenido a nuestro sitio web!",
+    "language": "Idioma",
+    "navbar": {
+      "search": "Buscar",
+      "darkMode": "Modo Oscuro",
+      "toggleNavigation": "Alternar navegación",
+      "noResults": "No se encontraron resultados"
+    },
+    "routes": {
+      "home": "Inicio",
+      "about": "Sobre",
+      "contact": "Contacto",
+      "contacts": "Contacto",
+      "search": "Buscar",
+      "news": "Noticias",
+      "cards": "Tarjetas",
+      "courses": "Cursos",
+      "tasks": "Tareas"
+    },
+    "tasks": {
+      "title": "Mis Tareas Académicas",
+      "subtitle": "Usa este espacio como tu agenda personal para organizar tus estudios y plazos.",
+      "placeholder": "¿Qué hay que hacer?",
+      "add_button": "Añadir",
+      "clear_button": "Limpiar Completadas",
+      "empty_state": "¡No hay tareas por ahora!"
+    },
+    "footer": {
+      "title": "Universidad Tecnológica Federal de Paraná (UTFPR)",
+      "description": "La UTFPR es una institución de educación superior enfocada en la tecnología y la innovación, ofreciendo programas de grado, posgrado e investigación.",
+      "contact": "Contacto",
+      "address": "R. Cristo Rei, 19 – Vila Becker, Toledo – PR, 85902-490",
+      "phone": "+55 (45) 3379-6800",
+      "email": "contato@utfpr.edu.br",
+      "copyright": "© 2025 Universidad Tecnológica Federal de Paraná. Todos los derechos reservados.",
+      "socialMedia": {
+        "whatsapp": "Enlace a WhatsApp",
+        "twitter": "Enlace a Twitter",
+        "youtube": "Enlace a YouTube",
+        "instagram": "Enlace a Instagram",
+        "facebook": "Enlace a Facebook",
+        "linkedin": "Enlace a LinkedIn",
+        "tiktok": "Enlace a TikTok"
+      }
+    },
+    "languageNames": {
+      "pt": "Portugués",
+      "en": "Inglés",
+      "es": "Español",
+      "fr": "Francés"
+    },
+    "aboutPage": {
+      "title": "Sobre Nosotros",
+      "paragraph1": "Este sitio web fue desarrollado como parte de la asignatura <strong>Web Front-End II</strong> de la UTFPR, utilizando Vue 3, Vite, TypeScript, Beercss e i18n.",
+      "paragraph2": "El proyecto demuestra buenas prácticas de front-end, con soporte para múltiples idiomas, un formulario funcional y responsividad.",
+      "title2": "Misión",
+      "paragraph3": "Desarrollar una educación tecnológica de excelencia, y construir y compartir conocimientos orientados a la solución de los desafíos reales de la sociedad.",
+      "title3": "Visión",
+      "paragraph4": "Ser una universidad reconocida internacionalmente por su contribución al desarrollo regional y nacional sostenible.",
+      "title4": "Ética",
+      "paragraph5": "Contar con estudiantes y personal que actúen éticamente, comprometidos con la búsqueda del conocimiento, la verdad científica y la imparcialidad.",
+      "title5": "Tecnología y humanismo",
+      "paragraph6": "Considerar la tecnología como una parte inherente de la sociedad, donde los aspectos humanos son integrales tanto al problema como a la solución en todo desarrollo tecnológico.",
+      "title6": "Desarrollo humano",
+      "paragraph7": "Formar ciudadanos críticos, éticos y autónomos.",
+      "title7": "Interacción con el entorno",
+      "paragraph8": "Desarrollar nuestra misión de manera responsable, solidaria y cooperativa con la sociedad, los organismos gubernamentales y las organizaciones.",
+      "title8": "Emprendimiento e innovación",
+      "paragraph9": "Impulsar el cambio mediante la iniciativa emprendedora.",
+      "title9": "Excelencia",
+      "paragraph10": "Promover la mejora continua de las actividades académicas, las prácticas de gestión y nuestra relación con la sociedad.",
+      "title10": "Sostenibilidad",
+      "paragraph11": "Asegurar que todas las acciones sean sostenibles en las dimensiones sociales, ambientales y económicas.",
+      "title11": "Diversidad e inclusión",
+      "paragraph12": "Promover la educación tecnológica respetando y valorando la diversidad y el potencial de todas las personas.",
+      "title12": "Democracia y transparencia",
+      "paragraph13": "Valorar la participación democrática y la transparencia en todos los niveles de la UTFPR, fortaleciendo la implicación de las comunidades universitarias y externas en la concepción, la toma de decisiones, la implementación y la evaluación de las acciones de la universidad."
+    },
+    "contactPage": {
+      "title": "Contáctenos",
+      "form": {
+        "nameLabel": "Nombre",
+        "namePlaceholder": "Escriba su nombre",
+        "emailLabel": "Correo electrónico",
+        "emailPlaceholder": "email@ejemplo.com",
+        "submitButton": "Enviar",
+        "locationTitle": "Ubicación de la UTFPR - Toledo",
+        "messageLabel": "Mensaje",
+        "messagePlaceholder": "Escribe tu mensaje aquí...",
+        "successMessage": "¡Mensaje enviado con éxito!"
+      }
+    },
+    "homePage": {
+      "title": "Página de Inicio",
+      "welcomeMessage": "Bienvenido a la página principal de nuestro sitio web."
+    },
+    "newsPage": {
+      "firstNews": {
+        "title": "UTFPR firma una asociación de R$ 39 millones con una petrolera china para investigación tecnológica",
+        "description": "El proyecto será realizado por el Núcleo de Flujo Multifásico del Campus Curitiba"
+      },
+      "secondNews": {
+        "title": "La ceremonia de toma de posesión de la Vicerrectoría será el próximo lunes, 30",
+        "description": "El mismo día también tomará posesión el director general del Campus Curitiba"
+      },
+      "thirdNews": {
+        "title": "Nota de Pesar: José Sollak",
+        "description": "El servidor jubilado de UTFPR falleció este jueves 26 de junio a los 76 años"
+      },
+      "fourthNews": {
+        "title": "Investigador se une a grupo de científicos que utilizarán el telescopio más grande del mundo",
+        "description": "Felipe Ribas estuvo en el lanzamiento del Observatorio Vera C. Rubin para presentar sus estudios"
+      },
+      "fifthNews": {
+        "title": "Investigación revela que la producción ecológica es la más rentable para la agricultura familiar",
+        "description": "El estudio comparó propiedades rurales que adoptan el modelo tradicional de cultivo con aquellas que utilizan agroecología"
+      },
+      "sixtiethNews": {
+        "title": "Proppg lanza convocatoria inédita para registro de becas externas de Iniciación Científica y Tecnológica",
+        "description": "La iniciativa permitirá el reconocimiento institucional de estos becarios"
+      },
+      "carousel": {
+        "prev": "Anterior",
+        "next": "Siguiente"
+      }
+    },
+    "courses": {
+      "civil_eng": "Ingeniería Civil",
+      "comp_eng": "Ingeniería de Computación",
+      "biopro_eng": "Ingeniería de Bioprocesos y Biotecnología",
+      "electro_eng": "Ingeniería Electrónica",
+      "math_lic": "Licenciatura en Matemáticas",
+      "chem_proc_tec": "Tecnología en Procesos Químicos",
+      "web_sys_tec": "Tecnología en Sistemas para Internet",
+      "bachelor": "Bachillerato",
+      "licentiate": "Licenciatura",
+      "technologist": "Tecnólogo"
+    }
+  },
+  "fr": {
+    "welcome": "Bienvenue sur notre site Web !",
+    "language": "Langue",
+    "navbar": {
+      "search": "Rechercher",
+      "darkMode": "Mode sombre",
+      "toggleNavigation": "Basculer la navigation",
+      "noResults": "Aucun résultat trouvé"
+    },
+    "routes": {
+      "home": "Accueil",
+      "about": "À propos",
+      "contact": "Contact",
+      "contacts": "Contact",
+      "search": "Rechercher",
+      "news": "Nouvelles",
+      "cards": "Cards",
+      "courses": "Cours",
+      "tasks": "Tâches"
+    },
+    "tasks": {
+      "title": "Mes Tâches Académiques",
+      "subtitle": "Utilisez cet espace comme votre agenda personnel pour organiser vos études et vos échéances.",
+      "placeholder": "Que faut-il faire ?",
+      "add_button": "Ajouter",
+      "clear_button": "Effacer terminées",
+      "empty_state": "Aucune tâche pour le moment !"
+    },
+    "footer": {
+      "title": "Université Fédérale de Technologie du Paraná (UTFPR)",
+      "description": "L'UTFPR est un établissement d'enseignement supérieur axé sur la technologie et l'innovation, proposant des programmes de licence, de master et de recherche.",
+      "contact": "Contact",
+      "address": "R. Cristo Rei, 19 – Vila Becker, Toledo – PR, 85902-490",
+      "phone": "+55 (45) 3379-6800",
+      "email": "contato@utfpr.edu.br",
+      "copyright": "© 2025 Université Fédérale de Technologie du Paraná. Tous droits réservés.",
+      "socialMedia": {
+        "whatsapp": "Lien vers WhatsApp",
+        "twitter": "Lien vers Twitter",
+        "youtube": "Lien vers YouTube",
+        "instagram": "Lien vers Instagram",
+        "facebook": "Lien vers Facebook",
+        "linkedin": "Lien vers LinkedIn",
+        "tiktok": "Lien vers TikTok"
+      }
+    },
+    "languageNames": {
+      "pt": "Portugais",
+      "en": "Anglais",
+      "es": "Espagnol",
+      "fr": "Français"
+    },
+    "aboutPage": {
+      "title": "À propos de nous",
+      "paragraph1": "Ce site a été développé dans le cadre du cours <strong>Web Front-End II</strong> de l'UTFPR, en utilisant Vue 3, Vite, TypeScript, Beercss et i18n.",
+      "paragraph2": "Le projet démontre de bonnes pratiques de développement front-end, avec prise en charge multilingue, un formulaire fonctionnel et une interface réactive.",
+      "title2": "Mission",
+      "paragraph3": "Développer une éducation technologique d'excellence, construire et partager les connaissances orientées vers la résolution des défis réels de la société.",
+      "title3": "Vision",
+      "paragraph4": "Être une université reconnue internationalement pour son rôle dans le développement régional et national durable.",
+      "title4": "Éthique",
+      "paragraph5": "Compter sur des étudiants et un personnel agissant de manière éthique, engagés dans la quête de connaissance, la vérité scientifique et l'impartialité.",
+      "title5": "Technologie et humanisme",
+      "paragraph6": "Considérer la technologie comme une composante inhérente à la société, où les aspects humains font partie intégrante du problème et de la solution dans tout développement technologique.",
+      "title6": "Développement humain",
+      "paragraph7": "Former des citoyens critiques, éthiques et autonomes.",
+      "title7": "Interaction avec l'environnement",
+      "paragraph8": "Conduire notre mission de manière responsable, solidaire et coopérative avec la société, les gouvernements et les organisations.",
+      "title8": "Entrepreneuriat et innovation",
+      "paragraph9": "Opérer des changements par une démarche entrepreneuriale.",
+      "title9": "Excellence",
+      "paragraph10": "Promouvoir l'amélioration continue des activités académiques, des pratiques de gestion et de nos relations avec la société.",
+      "title10": "Durabilité",
+      "paragraph11": "Veiller à ce que toutes les actions soient durables sur les plans social, environnemental et économique.",
+      "title11": "Diversité et inclusion",
+      "paragraph12": "Promouvoir l'éducation technologique en respectant et valorisant la diversité et le potentiel de chaque personne.",
+      "title12": "Démocratie et transparence",
+      "paragraph13": "Valoriser la participation démocratique et la transparence à tous les niveaux de l'UTFPR, en renforçant l'implication des communautés universitaires et externes dans la conception, la prise de décision, la mise en œuvre et l'évaluation des actions de l'université."
+    },
+    "contactPage": {
+      "title": "Contactez-nous",
+      "form": {
+        "nameLabel": "Nom",
+        "namePlaceholder": "Entrez votre nom",
+        "emailLabel": "E-mail",
+        "emailPlaceholder": "email@exemple.com",
+        "submitButton": "Envoyer",
+        "locationTitle": "Emplacement de l'UTFPR - Toledo",
+        "messageLabel": "Message",
+        "messagePlaceholder": "Tapez votre message ici...",
+        "successMessage": "Message envoyé avec succès !"
+      }
+    },
+    "homePage": {
+      "title": "Page d'accueil",
+      "welcomeMessage": "Bienvenue sur la page d'accueil de notre site."
+    },
+    "newsPage": {
+      "firstNews": {
+        "title": "L'UTFPR signe un partenariat de 39 millions de R$ avec une compagnie pétrolière chinoise pour la recherche technologique",
+        "description": "Le projet sera réalisé par le Centre d'Écoulement Multiphase du Campus de Curitiba"
+      },
+      "secondNews": {
+        "title": "La cérémonie d'investiture de la Vice-Présidence aura lieu lundi prochain, le 30",
+        "description": "Le même jour aura également lieu l'investiture du directeur général du Campus de Curitiba"
+      },
+      "thirdNews": {
+        "title": "Avis de Décès : José Sollak",
+        "description": "L'employé retraité de l'UTFPR est décédé ce jeudi 26 juin à l'âge de 76 ans"
+      },
+      "fourthNews": {
+        "title": "Un chercheur rejoint un groupe de scientifiques utilisant le plus grand télescope du monde",
+        "description": "Felipe Ribas a assisté au lancement de l'Observatoire Vera C. Rubin pour présenter ses recherches"
+      },
+      "fifthNews": {
+        "title": "Une étude révèle que la production écologique est la plus rentable pour l'agriculture familiale",
+        "description": "L'étude a comparé des exploitations agricoles utilisant le modèle traditionnel à celles utilisant l'agroécologie"
+      },
+      "sixtiethNews": {
+        "title": "Le Proppg lance un appel inédit pour l'enregistrement de bourses externes d'Initiation Scientifique et Technologique",
+        "description": "L'initiative permettra la reconnaissance institutionnelle de ces boursiers"
+      },
+      "carousel": {
+        "prev": "Précédent",
+        "next": "Suivant"
+      }
+    },
+    "courses": {
+      "civil_eng": "Génie Civil",
+      "comp_eng": "Génie Informatique",
+      "biopro_eng": "Génie des Bioprocédés et Biotechnologie",
+      "electro_eng": "Génie Électronique",
+      "math_lic": "Licence en Mathématiques",
+      "chem_proc_tec": "Technologie des Procédés Chimiques",
+      "web_sys_tec": "Technologie des Systèmes pour Internet",
+      "bachelor": "Baccalauréat",
+      "licentiate": "Licence",
+      "technologist": "Technologue"
+    }
+  }
+}
