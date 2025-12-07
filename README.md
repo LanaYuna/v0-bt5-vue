@@ -2,11 +2,12 @@
 Projeto inicial para outros projetos com [__vue3__](https://vuejs.org/) e [__bootstrap5__](https://getbootstrap.com/)
 
 # Documentação das alterações realizadas
-- Modificação da funcionalidade da barra de pesquisa de forma a filtrar palavras da página atual
-- Remoção de arquivos referentes a antiga funcionalidade da barra de pesquisa
+- Modificação da funcionalidade da barra de pesquisa para filtrar palavras apenas na página atual
+- Remoção de arquivos referentes à antiga funcionalidade da barra de pesquisa
 - Remoção da seção "cards"
-- Melhoria da estilização referente a seção "sobre"
-- Refatoração do template usando v-for para renderização universal de sections da seção "sobre"
+- Melhoria na estilização da seção "sobre"
+- Refatoração do template da seção "sobre" usando 'v-for' para renderização dinâmica das sections 
+- Direcionamento para a URL do curso ao clicar em algum curso na interface
 
 ## Como Contribuir e Expandir
 

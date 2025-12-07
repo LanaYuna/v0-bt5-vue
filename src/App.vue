@@ -37,7 +37,7 @@ provide(searchKey, query);
 <style>
 
 html[data-bs-theme="light"] mark { 
-  background-color: rgb(214, 223, 255);
+  background-color: rgb(203, 214, 255);
   padding: 0;
   border-radius: 5px;
 }
